@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Concurso de Disfraces</title>
+
+    <!-- Aqui es el logo de utc en chiquito, va en la 
+    parte superior (arriba) izquierda -->
+    <link rel="website icon" type="png" 
+    href="https://seeklogo.com/images/U/universidad-tres-culturas-logo-197F96E3D2-seeklogo.com.png">
+
+    <!-- Aqui es la conexion con css -->
+    <link rel="stylesheet" href="estilos.css">
+<body>
+
+    <form action="alta.php" method="POST">
+
+<!-- Aqui va el titulo -->
+    <div class="container">
+
+        <h2 action="" class="form">
+            <p class="form-titulo">Concurso de Disfraces </p>
+
+            <!-- el form-inputde es unicamente
+            para la imagen -->
+            <p class="form-inputde"></p>
+
+            <!-- el for-inputd es solo un texto -->
+                <p class="form-inputd">Datos del concursante</p>       
+
+                <!-- El label con input y div es para texto
+                y una caja de texo en el campo nombre -->
+    <div class="form-input">
+    <label for="name">Nombre del concursante</label>       
+     <input type="text" name="name">
+     <p class="mensajeError"></p>
+    </div>
+
+    <div class="form-input">
+        <label for="ngrupo">Grupo</label>       
+         <input type="text" name="ngrupo">
+        </div>
+        <p></p>
+
+        <div class="form-input">
+            <label for="ncarrera">Carrera</label>       
+             
+             <select name="carreras">
+                <option value="Ing. en Sistemas" >Ing. en Sistemas</option>
+                <option value="Administacion Empresas" >Administacion Empresas</option>
+                <option value="Arquitectura" >Arquitectura</option>
+                <option value="Finanzas" >Finanzas</option>
+                <option value="Derecho" >Derecho</option>
+                <option value="Pedagogia" >Pedagogia</option>
+                <option value="Turismo" >Turismo</option>
+             </select>
+            </div>
+            <p></p>
+
+            <div class="form-input">
+                <label for="ndescripcion">Descripcion del disfraz</label>       
+                 <input type="text" name="ndescripcion">
+                </div>
+
+                <div class="form-input">
+                    <label for="nplantel">Plantel</label>       
+                     <input type="text" name="nplantel">
+                    </div>
+                
+
+                  <div class="form-input">
+                    <label for="ndescripcion">Subir calavera literaria</label>       
+                     <input type="file" name="nimagenes">
+                     <input type="file" name="nimagenesdos">
+                    </div>
+
+        <div class="form-boton">
+            <input type="submit" value="Guardar">
+        </div>
+        <p class="mensajeCorrecto"></p>
+    </form>
+        </h2>
+        
+</body>
+</html>
